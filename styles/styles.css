@@ -1,0 +1,575 @@
+/*GENERAL CONFIG*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffffff;
+}
+.hello-world, /*.where-we-from,*/ .episodes h3, .stelar-guests h3, .subjects h3, footer{
+    padding: 0 15px;
+}
+
+a{
+    font-family: 'IBM Plex Mono', medium;
+    font-size: 16px;
+    color: #060A24;
+    line-height: 22px;
+    text-decoration: none;
+    text-align: center;
+}
+.menu a:hover, .menu-list a:hover{
+    text-decoration: line-through;
+    color:#00F3BB ;
+}
+.menu a:active{
+    color: rgba(6,10,36,0.56);
+    text-decoration: line-through;
+}
+
+p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    line-height: 22px;
+}
+
+h1, h3{
+    margin-bottom: 3%;
+    font-family: 'IBM Plex Sans';
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing:0;
+    line-height: 42px;
+    font-weight:100;
+    
+}
+h1{
+    width: 90%;
+    display:block;
+    
+}
+.episodes h3, .news h3{
+    color: #FFFFFF;
+}
+
+figcaption h5{
+    font-family:'IBM Plex Sans';
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+}
+.know-more-button, .listen-episodes{
+    margin: 30px auto;
+    max-width: 288px;
+    height: 48px;
+    display: block;
+    background: #00F3BB;
+    text-align: center;
+}
+
+.know-more-button, .listen-episodes{
+    transition: ease 3s;
+}
+.know-more-button a, .listen-episodes a{
+    font-family: 'IBM Plex Mono', medium; 
+    font-size: 16px;  
+    font-weight: bold;
+    color: #060A24;
+    letter-spacing: 0;   
+}
+.know-more-button a, .listen-episodes a{
+    display: block;
+    transition: ease-in-out 1s;
+}
+
+
+.know-more-button:hover, .listen-episodes:hover{
+    background: #0000fe;
+
+    transition: ease 3s;
+}
+
+.know-more-button:hover a, .listen-episodes:hover a{
+    color: #ffffff;
+
+    transition: ease-in-out 1s;
+}
+
+/*contenedores con display:flex*/
+nav, .iframes-container, .gallery, figure, .news-container, footer{
+    display: flex;
+}
+
+
+/* HEADER */
+
+nav{
+    padding: 10px 15px 0; 
+    margin: 0 auto;
+    max-height: 80px;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center; 
+}
+/*
+nav .logo{
+    margin: 0 0 0 5%;
+}*/
+nav .menu-icon{
+    width: 5.2%;
+    height: 0.2%;
+    margin:0 5.9% 0 0;
+}
+/*MENU DESKTOP*/
+.menu{
+    display: none;
+} 
+/*MENU MOBILE*/
+input {
+    display: none;
+}    
+ul {
+        display: none;
+    }
+.invisible {
+        display: none;
+    }
+.menu-list li{
+    margin-bottom: 10%;
+}
+.menu-list li:hover{
+    background:#0000a3 50% ;
+    border-bottom: 1px solid #ffff;
+}
+.menu-list a{
+    padding: 4%;
+    color: #ffff;
+}
+
+.menu-mobile:checked~ul {
+        padding: 5%;
+        width: 100%;
+        /*height:40%;*/
+        position: fixed;
+        top:50px;
+        left: 0px;
+        display: block;
+        flex-direction: column;
+        z-index: 3;
+        background: #0000ec;
+        list-style: none;
+    }
+.menu-mobile:checked li{
+        padding: 4% 2%;
+        width: 40%;
+        display: inline-flex;
+    }
+.menu-mobile:checked~ label .invisible {
+        display: block;
+    }
+.menu-mobile:checked~ label .visible {
+        display: none;
+    }
+
+.menu-mobile:checked ul li a{
+    display: none;
+}
+
+.hello-world{
+    /*padding-left: 0;
+    padding-right: 0;*/
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.desktop-p{
+    display: none;  
+}
+
+.know-more-button a{
+    line-height:48px;
+}
+
+/*EPISODES*/
+
+.background-container{
+    padding: 5% 0 10%;
+    /*height: auto;*/
+    display: flex;
+    flex-flow: column wrap;
+    clip-path: polygon(0% 10vw, 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.episodes{
+    padding-top: 8%;
+    /*display:block;*/
+    /*margin: 0 0 10%;*/
+}
+.episodes h3{
+    /*padding: 0 5%;
+    margin: 30px auto;*/
+    text-align: start;
+    color: #ffffff;  
+}
+.iframes-container{
+    flex-flow: row wrap;
+    justify-content: center;
+    /*padding: 5% 0;*/
+}
+iframe:last-child{
+    margin-bottom: 20%;
+}
+
+
+iframe{
+    margin:1% auto; 
+    height: 160px;
+    border-style: none;
+}
+
+
+/*PHONE & ARTICLE*/
+
+.phone-article{
+    /*margin-bottom: 15%; */
+    margin: 0 auto;
+    padding: 0 5% 5%;
+    display: flex;
+    max-width: 1440px;
+    /*max-height: 90vh;*/
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -85px;
+    
+}
+
+.phone{
+    margin: auto;
+    /*width: 360px;*/
+    height: 520px;
+    /*max-width: 90%;*/
+    /*position: relative;
+    top: -95px;*/
+}
+
+
+/*STELAR GUESTS*/
+
+.gallery{
+    flex-flow:row wrap;
+}
+.gallery img{
+   /*min-width: auto;
+   width: 33.33%;*/
+   width: 100%;
+}
+
+/*SUBJECTS*/
+
+.subjects{
+    /*margin: 0 auto;*/
+    margin-top: 70px;
+    /*max-width: 1440px;*/
+}
+.figs{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    margin: 30px 30px;
+    flex-direction: column;
+}
+figcaption{
+    margin-top: 5%;
+    width: 100%;
+}
+
+/*NEWS*/
+ 
+.news-container{
+    /*height: 341px;*/
+    /*padding: 0 15px;*/
+    /*padding: 10% 0 5%;*/
+    clip-path: polygon(0% 10vw, 100% 0%, 100% 100%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.news{
+    padding: 20% 15px;
+    margin: 0 auto;
+    max-width: 1440px;
+    /*display: block; */
+    text-align: center;
+}
+/*.news h3{
+    /*margin-bottom: 15%;
+}*/
+.listen-episodes{
+    padding: 3%;
+    margin: 30px auto 0;
+    line-height: 28px;
+}
+
+/*footer{
+   
+}*/
+.footer-container{
+    margin: 20px auto;
+    /*margin-top: 20px;*/
+    max-width: 1440px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+/*footer p{
+    margin: 8% 0 2% 0;
+    text-align: center;
+}*/
+.social-media{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ---------------------------------------------- */
+
+
+/*MEDIA QUIERIES 768-1440*/ 
+
+@media screen and (min-width: 720px) /*and (max-width:1440px)*/{
+    
+    /*generales y grupales*/
+    a{
+        margin-left: 10px;
+        font-family:'IBM Plex Mono';
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    p{
+        font-family: 'IBM Plex Mono';
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h1{
+        font-size: 64px;
+    }
+    h1 br{
+        display: none;
+    }
+    span{
+       color: #0000ec;
+   }
+    h3{
+        font-size: 48px;
+    }
+    .know-more-button a, .listen-episodes a{
+        font-size: 18px;
+        text-align: center;
+    }
+    /*.where-we-from, .stelar-guests h3, .subjects h3, footer{
+        padding: 0 150px;
+    }*/
+    .hello-world, .where-we-from, .episodes h3, .stelar-guests h3, .subjects h3, footer{
+        padding: 0 150px;
+    }
+     /*HEADER*/
+     nav{
+         padding: 10px 105px 0;
+     }
+     .logo img{
+         width: 36px;
+         height: 36px;
+     }
+
+     .menu{
+        /*max-width: 200px;*/
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+     }
+     /*MENU-MOBILE*/
+     .visible{
+         display: none;
+     }
+
+     .mobile-p{
+         display:none;
+     }
+     
+     .desktop-p{
+         max-width: 70%;
+         display:inline-flex;
+         flex-wrap: wrap;
+     }
+     .hello-world{
+        padding-top: 50px;
+     }
+     .know-more-button{
+         margin: 5% 0 0 0;
+         width: 226px;
+         line-height: 48px;
+     }
+     /*EPISODES*/
+     .background-container{
+         padding: 200px 0;
+     }
+     .episodes{
+         padding-top: 0;
+         margin: 3% auto;
+         max-width: 1440px;
+     }
+
+     /*.episodes h3{
+        margin: 10% 0 0;
+     }*/
+     .iframes-container{
+        /*margin: 0 auto;
+        padding: 2% 0;
+        max-height: 1050px;
+        max-width: 1280px;*/
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    iframe:last-child{
+        margin-bottom: 0;
+    }
+     iframe{
+        margin: 2%;
+        /*width: 480px;  
+        height: 250px;*/
+        width: 584px;  
+        height: 232px;
+     }
+     /*PHONE & ARTICLE*/
+     .phone-article{         
+         padding:0 5%;
+         /*margin-bottom: 0;
+         max-height: none; */
+         /*max-width: 1240px;*/
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-evenly;
+         flex-wrap: nowrap;
+         top: -150px;
+     }
+     .phone{
+         /*max-width: 40%;
+         min-height: 40vh;*/
+         margin: 0;
+         width: 458px;
+         height: 760px;
+         top: -95px;
+     }
+     
+     .where-we-from{
+        margin-bottom: 5%;
+        padding:100px 1%;
+        width: 450px;
+        align-self: center;
+        /*height: 400px;*/
+     }
+     .where-we-from h3{
+         margin: 10% 0 8% 0;
+     }
+    /*STELAR GUESTS*/
+    .stelar-guests{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+     .gallery img{
+        min-width: auto;
+        width: 33.33%;
+     }
+     /*subjects*/
+     .subjects{
+         /*margin: 5% 0 2% 0;*/
+         height: auto;
+         
+     }
+     .subjects h3{
+        margin: 0 auto;
+        max-width: 1440px;
+        margin-bottom: 50px;
+     }
+     .figs{
+         padding: 0 100px;
+         /*margin:0 auto;
+         width:1000px;
+         display: flex;
+         justify-content:center;*/
+     }
+     figure{
+         margin: auto;
+         width: 220px;
+     }
+     figure img{
+         margin: auto;
+         width: 104px;
+     }
+     /*NEWS*/
+     .news-container{
+        padding: 10% 0 5%;
+        /*height: 40vh;*/
+     }     
+     .news{
+         padding: 0;
+     }
+     .news h3 br{
+        display: none;
+     }
+     .news h3{
+        margin-bottom: 5vh;
+     }
+     .listen-episodes{
+        margin: auto;
+        /*padding: 1vh;*/
+        max-width: 345px;
+        height: 56px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+     }
+     /*FOOTER*/
+     footer{
+        /*margin: 0 7%;*/
+        /*padding: 20px;*/
+        padding: 10px 105px 0;
+        /*flex-direction: row;
+        justify-content: space-between;*/
+     }
+     .footer-container{
+         width: 100%;
+         justify-content: space-between;
+     }
+     footer p, .social-media{
+        margin: 0;
+        
+     }
+     /*footer p{
+        width: 269px;
+        justify-content:flex-start;
+     }*/
+     .social-media{
+         width: 230px;
+         display: flex;
+     }
+    .social-media a{
+        /*padding: 0 6%;
+        justify-content: space-between;*/
+        font-size: 18px;
+    }
+}
+
