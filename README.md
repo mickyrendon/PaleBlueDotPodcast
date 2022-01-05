@@ -13,7 +13,7 @@ The commonly technique used was 'flexbox' to make the page responsive.
 - FontAwesome
 - Google fonts
 
-# Check it out
+# Check it out 👇
 -[PaleBlueDotPodcast](https://mickyrendon.github.io/PaleBlueDotPodcast/)
 
 ### screenshots
