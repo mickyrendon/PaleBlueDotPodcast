@@ -18,15 +18,11 @@ The commonly technique used was 'flexbox' to make the page responsive.
 
 ### screenshots
 
-<img src="![imagen](https://user-images.githubusercontent.com/64873799/148286108-323a46ba-74a3-4d40-83a5-93b89f1c16d6.png)" width="800rem" height="500rem">
+<img src="https://user-images.githubusercontent.com/64873799/148286108-323a46ba-74a3-4d40-83a5-93b89f1c16d6.png">
 
 
-<img src="![imagen](https://user-images.githubusercontent.com/64873799/148286406-5fcd2350-c415-45b8-ad7e-8729b5ee5cf3.png)" width="800rem" height="500rem">
+<img src="https://user-images.githubusercontent.com/64873799/148286406-5fcd2350-c415-45b8-ad7e-8729b5ee5cf3.png">
 
-<img src="![imagen](https://user-images.githubusercontent.com/64873799/148286518-2c76392f-b87e-480b-898c-f3c0e1e46e15.png)" width="800rem" height="500rem">
+<img src="https://user-images.githubusercontent.com/64873799/148286518-2c76392f-b87e-480b-898c-f3c0e1e46e15.png">
 
-<img src="![imagen](https://user-images.githubusercontent.com/64873799/148286677-40dc67f8-cbb7-4bc4-9078-a5fc96d0c683.png)" width="800rem" height="500rem">
-
-<img src="" width="800rem" height="500rem">
-
-<img src="" width="800rem" height="500rem">
+<img src="https://user-images.githubusercontent.com/64873799/148286677-40dc67f8-cbb7-4bc4-9078-a5fc96d0c683.png">
