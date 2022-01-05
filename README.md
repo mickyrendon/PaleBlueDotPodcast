@@ -23,6 +23,4 @@ The commonly technique used was 'flexbox' to make the page responsive.
 
 <img src="https://user-images.githubusercontent.com/64873799/148286406-5fcd2350-c415-45b8-ad7e-8729b5ee5cf3.png">
 
-<img src="https://user-images.githubusercontent.com/64873799/148286518-2c76392f-b87e-480b-898c-f3c0e1e46e15.png">
-
-<img src="https://user-images.githubusercontent.com/64873799/148286677-40dc67f8-cbb7-4bc4-9078-a5fc96d0c683.png">
+<img src="https://user-images.githubusercontent.com/64873799/148286518-2c76392f-b87e-480b-898c-f3c0e1e46e15.png">      <img src="https://user-images.githubusercontent.com/64873799/148286677-40dc67f8-cbb7-4bc4-9078-a5fc96d0c683.png">
